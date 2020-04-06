@@ -85,7 +85,7 @@
 
 ![](media/b82ba2aaa60f290da438450a86ccb48f.png)
 
-从上表的对比可以看到，这十种模糊算法在模糊品质和稳定性这两方面都获得了不错的评级，这是因为给到足够的迭代次数，且不做RT的DownSample，他们都可以收敛到一个高品质的模糊质感。
+从上表的对比可以看到，除了Grainy Blur因其模糊质感的特殊性获得了“一般”的模糊品质评级之外，另外九种模糊算法在模糊品质和稳定性这两方面都获得了不错的评级。这是因为给到足够的迭代次数，且不做RT的DownSample，他们都可以收敛到一个高品质的模糊质感。
 
 最终的分化在于性能，这才是评判一种算法性价比是否高，能否广泛用于实时渲染的关键因素。其中，可以看到仅双重模糊（Dual Blur）和粒状模糊（Grainy Blur）两种算法，获得了高的性能评级。当然，这是针对标准的算法而言，其他八种算法如果进行进一步的性能优化，也能具有更佳的性能。
 
@@ -100,9 +100,7 @@ Post-processing Stack v2。后续也将提供对Unity引擎URP/LWRP/HDRP的兼�
 
 ![](media/e230629ffe1b2da2325caec0a6401b96.jpg)
 
-截止本文发表，目前已以开源形式放出了17种Blur算法的后处理实现。后续文章中完整的后处理实现，将都在X-PostProcessing Libray中进行收录。
-
-而随着后续更多相关文章和内容的公开，X-PostProcessing Libray将成型为一个具有100+种高品质后处理特效的后处理开源算法库。
+截止本文发表，目前已以开源形式放出了17种Blur算法的后处理实现。而随着后续更多内容的公开，X-PostProcessing Libray将成型为一个具有100+种后处理特效的高品质后处理开源算法库。
 
 <br>
 
@@ -311,7 +309,7 @@ Kawase Blur渲染效果接近高斯模糊，但具有更好的性能：
 # 四、双重模糊（Dual Blur）
 
 
-Dual Kawase Blur，简称Dual Blur，是SIGGRAPH 2015上ARM团队提出的一种衍生自Kawase Blur的算法。其由两种不同的Blur Kernel构成，如下图所示。
+Dual Kawase Blur，简称Dual Blur，是SIGGRAPH 2015上ARM团队提出的一种衍生自Kawase Blur的模糊算法。其由两种不同的Blur Kernel构成，如下图所示。
 
 ![](media/dbd46f6ebbe1a64e080f2667b55cdd8e.png)
 
@@ -319,7 +317,7 @@ Dual Kawase Blur，简称Dual Blur，是SIGGRAPH 2015上ARM团队提出的一种
 
 ![](media/2ebf4981ecdc7d4c81bf5c2f02edfb31.png)
 
-由于灵活的升降采样带来了blit RT所需计算量的减少等原因， Dual Kawase Blur相较于上文中提到的Gauusian Blur、Box Blur、Kawase Blur等Blur算法更好的性能，下图是相同条件下的性能对比。
+由于灵活的升降采样带来了blit RT所需计算量的减少等原因， Dual Kawase Blur相较于上文中提到的Gauusian Blur、Box Blur、Kawase Blur等Blur算法,有更好的性能，下图是相同条件下的性能对比。
 
 ![](media/c995ed9cebd5b0e2760b0556f36b2149.png)
 
