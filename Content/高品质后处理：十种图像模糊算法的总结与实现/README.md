@@ -39,7 +39,7 @@
 
 ![](media/6b40938cfddc691005bb05822a5c398e.jpg)
 
-图《巫师3》 中基于径向模糊（Radial Blur）的Sun Shaft
+图《巫师2》 中基于径向模糊（Radial Blur）的Sun Shaft
 
 ![](media/130ec1a6dbdee035c956306b98b39bcb.jpg)
 
@@ -57,7 +57,8 @@
 
 图 Tom Clancys The Division中的基于散景模糊（Bokeh Blur）的景深
 
-这里也放一个《赛博朋克:霓虹中国(CyberNeon)》的视频（ArtStation原贴：https://www.artstation.com/artwork/Z5RkbZ），其中对于赛博朋克风夜中国风城市的展现，如果缺少了Bloom和Glare Lens Flare等依赖于本文讲到的模糊算法的后处理特效，展现出来的品质将少了很多韵味：
+这里也放一个《赛博朋克:霓虹中国(CyberNeon)》的视频（ArtStation原贴：https://www.artstation.com/artwork/Z5RkbZ）
+，其中对于赛博朋克风夜中国风城市的展现，如果缺少了Bloom和Glare Lens Flare等依赖于本文讲到的模糊算法的后处理特效，展现出来的品质将少了很多韵味：
 
 <https://www.youtube.com/watch?v=CZ4MOBSx2xw>
 
